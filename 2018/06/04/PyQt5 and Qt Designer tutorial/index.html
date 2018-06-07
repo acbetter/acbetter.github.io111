@@ -92,7 +92,7 @@
         <span class="column is-narrow">
             
             
-            14 分钟 读完 (约 2081 字)
+            14 分钟 读完 (约 2082 字)
         </span>
         
     </div>
@@ -182,6 +182,7 @@
 </tbody>
 </table>
 <p>综上所述，我最终选择了 PyQt5 作为主力跨平台 GUI 开发语言。PyQt5 可以借助 Qt Designer 软件实现可视化（拖拽）编写界面，十分方便。但是它却有十分致命的缺点：上手难，其原因主要在于 PyQt5 的文档假定用户具备学习过 C++ 以及 Qt 5 的经验。所以在此，我分享一下自己的学习路线，以及我在社区为数不多的资料里提取出的精华，供大家参考。</p>
+<a id="more"></a>
 <h2 id="初见-Hello-world"><a href="#初见-Hello-world" class="headerlink" title="初见 - Hello, world"></a>初见 - Hello, world</h2><p>本小节列举了这两种方式实现 PyQt5 Hello, World 程序的编写，本人推荐你都体验一下，比较一下异同。</p>
 <h3 id="纯-Python-代码实现"><a href="#纯-Python-代码实现" class="headerlink" title="纯 Python 代码实现"></a>纯 Python 代码实现</h3><p>纯 Python 代码比较暴力直接，直接运行下面这种代码即可：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QWidget</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    window = QWidget()</span><br><span class="line">    window.resize(<span class="number">250</span>, <span class="number">150</span>)</span><br><span class="line">    window.move(<span class="number">300</span>, <span class="number">300</span>)</span><br><span class="line">    window.setWindowTitle(<span class="string">'Simple'</span>)</span><br><span class="line">    window.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
