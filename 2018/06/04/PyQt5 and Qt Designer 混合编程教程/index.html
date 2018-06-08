@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>PyQt5 and Qt Designer 混合编程教程 - AC Better&#39;s Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+<link rel="icon" href="/favicon.ico">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    AC Better
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="https://github.com/acbetter">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            PyQt5 and Qt Designer 混合编程教程
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-06-04T02:00:00.000Z" itemprop="datePublished">4 天前</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            14 分钟 读完 (约 2145 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>对比了几大跨平台 GUI 框架之后，我选择使用 PyQt5 作为主要开发工具。然而，能被找到的教程太少太少了，所以我自己写了一份教程，由浅入深，供大家参考。</p>
+<a id="more"></a>
+<h2 id="当前主流跨平台-GUI-对比"><a href="#当前主流跨平台-GUI-对比" class="headerlink" title="当前主流跨平台 GUI 对比"></a>当前主流跨平台 GUI 对比</h2><table>
+<thead>
+<tr>
+<th>GUI 框架</th>
+<th>语言</th>
+<th>当前版本</th>
+<th>软件周期</th>
+<th>入门难易</th>
+<th>文档完善程度</th>
+<th>社区讨论资源</th>
+<th>定制化</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swing</td>
+<td>Java</td>
+<td>Java SE 8</td>
+<td>1996-2014</td>
+<td>一般</td>
+<td>还行</td>
+<td>一般</td>
+<td>难</td>
+<td>古老</td>
+</tr>
+<tr>
+<td>JavaFX</td>
+<td>Java</td>
+<td>Java FX 9</td>
+<td>2008-2014</td>
+<td>一般</td>
+<td>很好</td>
+<td>很多</td>
+<td>一般</td>
+<td>JDK 11+ 将不会内置</td>
+</tr>
+<tr>
+<td>Tkinter</td>
+<td>Python</td>
+<td>Tcl/Tk 8.6</td>
+<td>1999-</td>
+<td>简单</td>
+<td>很好</td>
+<td>很多</td>
+<td>较差</td>
+<td>只适合写一些简单的界面</td>
+</tr>
+<tr>
+<td>PyQt4</td>
+<td>Python</td>
+<td>Qt 4.8</td>
+<td>2012-2017</td>
+<td>难</td>
+<td>极佳</td>
+<td>一般</td>
+<td>很好</td>
+<td>不再更新</td>
+</tr>
+<tr>
+<td>PyQt5</td>
+<td>Python</td>
+<td>Qt 5.11</td>
+<td>2016-</td>
+<td>难</td>
+<td>极佳</td>
+<td>较少</td>
+<td>很好</td>
+<td>难上手、难打包、打包体积稍大</td>
+</tr>
+<tr>
+<td>Electron</td>
+<td>JavaScript</td>
+<td>electron v2.0.2</td>
+<td>2013-</td>
+<td>简单</td>
+<td>很好</td>
+<td>很多</td>
+<td>很好</td>
+<td>占用内存大、打包体积大、开发栈更新快</td>
+</tr>
+</tbody>
+</table>
+<p>综上所述，我最终选择了 PyQt5 作为主力跨平台 GUI 开发语言。PyQt5 可以借助 Qt Designer 软件实现可视化（拖拽）编写界面，十分方便。但是它却有十分致命的缺点：上手难，其原因主要在于 PyQt5 的文档假定用户具备学习过 C++ 以及 Qt 5 的经验。所以在此，我分享一下自己的学习路线，以及我在社区为数不多的资料里提取出的精华，供大家参考。</p>
+<h2 id="初见-Hello-world"><a href="#初见-Hello-world" class="headerlink" title="初见 - Hello, world"></a>初见 - Hello, world</h2><p>本小节列举了这两种方式实现 PyQt5 Hello, World 程序的编写，本人推荐你都体验一下，比较一下异同。</p>
+<h3 id="纯-Python-代码实现"><a href="#纯-Python-代码实现" class="headerlink" title="纯 Python 代码实现"></a>纯 Python 代码实现</h3><p>纯 Python 代码比较暴力直接，直接运行下面这种代码即可：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QWidget</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    window = QWidget()</span><br><span class="line">    window.resize(<span class="number">250</span>, <span class="number">150</span>)</span><br><span class="line">    window.move(<span class="number">300</span>, <span class="number">300</span>)</span><br><span class="line">    window.setWindowTitle(<span class="string">'Simple'</span>)</span><br><span class="line">    window.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+<p>为了你能更好地理解「怎样使用纯 Python 代码写出界面」，我强烈推荐你阅读 <a href="https://legacy.gitbook.com/book/maicss/pyqt5/details" target="_blank" rel="noopener">PyQt5 中文教程</a> 的前四个章节，这个教程的后几个章节我们会在本篇文章的后面讲到，所以你大可不必担心。</p>
+<h3 id="借助-Qt-Designer-可视化-UI-生成工具"><a href="#借助-Qt-Designer-可视化-UI-生成工具" class="headerlink" title="借助 Qt Designer 可视化 UI 生成工具"></a>借助 Qt Designer 可视化 UI 生成工具</h3><p>在你阅读完上面那个教程的 <a href="https://maicss.gitbooks.io/pyqt5/content/布局管理.html" target="_blank" rel="noopener">布局管理</a> 章节后，你应该使用 Qt Designer 画出界面，然后通过 Python 代码调用 <code>*.ui</code> 文件，渲染界面，然后比较两种方法的差异。</p>
+<p>通过 Python 代码调用 <code>*.ui</code> 文件有两种方式，一种是通过 <code>PyQt5.uic.loadUi</code> 模块，直接加载 <code>*.ui</code> 文件，如以下代码所示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PyQt5.uic <span class="keyword">import</span> loadUi</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ApplicationWindow</span><span class="params">(QMainWindow)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super(ApplicationWindow, self).__init__()</span><br><span class="line">        loadUi(<span class="string">'mainWindow.ui'</span>, self)  <span class="comment"># 改成你的 *.ui 文件名</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    window = ApplicationWindow()</span><br><span class="line">    window.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+<p>需要注意的是，该代码假定你的 Python 代码和你的 <code>*.ui</code> 文件位于同一文件夹下面。如果你的 <code>*.ui</code> 文件位于其他位置，你需要自行修改函数 <code>loadUi</code> 的参数。</p>
+<p>第二是通过 pyuic 工具，先把 <code>*.ui</code> 文件转换成 <code>*.py</code> 文件，然后直接在 Python 代码中导入该模块，非常地有意思。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QApplication, QMainWindow</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> mainWindow <span class="keyword">import</span> Ui_MainWindow  <span class="comment"># 把 mainWindow 改成你的 *.py 文件名</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ApplicationWindow</span><span class="params">(QMainWindow)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super(ApplicationWindow, self).__init__()</span><br><span class="line">        self.ui = Ui_MainWindow()</span><br><span class="line">        self.ui.setupUi(self)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    window = ApplicationWindow()</span><br><span class="line">    window.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+<p>怎么样把 Qt Desinger 生成的 <code>*.ui</code> 文件转换成 <code>*.py</code> 文件呢，你可以使用一个工具，叫做 pyuic，你可以在 <code>*.ui</code> 位于的当前文件夹下，直接使用命令 <code>pyuic5 -x file-name.ui -o file-name.py</code> 转换。<strong>如果你用的是 PyQt4</strong>，不要忘记把命令中的 pyuic5 改为 pyuic4；<strong>如果你用了虚拟环境</strong>，那么 pyuic5 的路径大概会在 <code>./venv/bin</code> 下，命令则可以变为 <code>./venv/bin/pyuic5 file-name.ui -o file-name.py</code>；<strong>如果你用的是 Windows 而且 pyuic 的路径并不在你系统的环境变量中</strong>，你可能得自行查找 pyuic 的路径，那么命令可能看上去更像是这样 <code>C:\Python36\Lib\site-packages\PyQt5\pyuic5.bat -x file-name.ui -o file-name.py</code>，而大多数人的做法是把这个 pyuic5.bat 文件拷贝到当前项目根目录中，这样就可以直接通过最初的那条命令 <code>pyuic5.bat -x file-name.ui -o file-name.py</code> 使用，或是通过 <code>python -m PyQt5.uic.pyuic -x file-name.ui -o file-name.py</code> 来转换呢。</p>
+<p>你可能会觉得，在每次修改了 <code>*.ui</code> 文件之后，都需要重新编译运行一下 pyuic 命令，非常麻烦。<strong>这里有个关于 PyCharm IDE 的小技巧</strong>，可以在你允许 Python 程序之前，自动调用 pyuic 命令更新 <code>*.py</code> 文件。</p>
+<p>此处应该有图</p>
+<p>可能大家会问，既然 <code>loadUi</code> 那么方便，为什么还要使用 pyuic 呢？根据我个人的理解和经验，我认为主要有几点值得深思：</p>
+<ol>
+<li>通过 pyuic 转换得到的 <code>*.py</code> 文件更容易阅读和理解，便于发现错误并改进 <code>*.ui</code> 文件。</li>
+<li>在打包发布时，<code>*.ui</code> 文件可能无法混淆，容易被人破解，被其他人篡改，修改界面布局，而 <code>*.py</code> 文件可以进行更深层次的混淆，很难被破解，更加安全。</li>
+</ol>
+<h3 id="番外：如何安装-Qt-Desinger"><a href="#番外：如何安装-Qt-Desinger" class="headerlink" title="番外：如何安装 Qt Desinger"></a>番外：如何安装 Qt Desinger</h3><p>PS：Qt Desinger 的安装又是另外一个话题了，本文简单地提一下的它的安装吧！</p>
+<p>对于 macOS 操作系统可以通过 Homebrew 安装，命令是 <code>brew install qt</code>，然后你可以打开文件夹 <code>/usr/local/Cellar/qt/your-qt-verison/libexec/Desiger.app</code>，其中 <code>your-qt-version</code> 应该替换成你的 Qt 版本号，笔者使用的是 5.11.0。</p>
+<p>对于 Windows 用户，则可以从 <a href="https://www.qt.io/download-qt-installer" target="_blank" rel="noopener">官方下载页面</a> 上直接下载，一路安装即可，网速不好的话，也可以在官网上找到 <a href="https://www1.qt.io/offline-installers" target="_blank" rel="noopener">离线安装包</a>，在此不再赘述。有意思的是，你从 <a href="https://www.qt.io/" target="_blank" rel="noopener">官网</a> 上点击下载的时候有一定概率会让你注册，而通过我上面给的两个下载页面却不会要求注册权限。</p>
+<h2 id="再遇-Signals-and-Slots"><a href="#再遇-Signals-and-Slots" class="headerlink" title="再遇 - Signals and Slots"></a>再遇 - Signals and Slots</h2><p>Signals and Slots 常常被人翻译为「信号和槽机制」，我觉得这种翻译机制很容易把新人搞懵逼，这几个名词我还是不翻译好了，让我们这个吧：</p>
+<ol>
+<li>Sender 发送者：负责发送 Signals 信号</li>
+<li>Receiver 接受者：负责接受 Signals 信号</li>
+<li>Slots：对信号作出的反应</li>
+</ol>
+<p>为了你能更好地理解「Signals and Slots」，我强烈推荐你阅读 <a href="https://legacy.gitbook.com/book/maicss/pyqt5/details" target="_blank" rel="noopener">PyQt5 中文教程</a> 的 <a href="https://maicss.gitbooks.io/pyqt5/content/事件和信号.html" target="_blank" rel="noopener">事件和信号</a> 这个章节，认真阅读示例「拖动滑块改变数字」，研读其代码。</p>
+<p>在看完了上面那个链接的内容后，我相信你对 Signals and Slots 已经有了自己的理解，我在这里简单地讲一下，如何通过 Qt Designer 绑定信号和事件，这一部分的资料确实有点少。</p>
+<p>这里应该有图</p>
+<h2 id="Layout：Qt-Designer-之-有意思的布局"><a href="#Layout：Qt-Designer-之-有意思的布局" class="headerlink" title="Layout：Qt Designer 之 有意思的布局"></a>Layout：Qt Designer 之 有意思的布局</h2><h3 id="带滚动条的图片展示"><a href="#带滚动条的图片展示" class="headerlink" title="带滚动条的图片展示"></a>带滚动条的图片展示</h3><p>有时候一张图片太大了，我们必须为其安置一个滚动，那么在 Qt Designer 里面该如何操作呢？</p>
+<p>本小节列举了这两种方式实现 Hello, World 程序的编写，本人推荐你都体验一下，比较一下异同。</p>
+<h2 id="DIY：定制你的专属控件"><a href="#DIY：定制你的专属控件" class="headerlink" title="DIY：定制你的专属控件"></a>DIY：定制你的专属控件</h2><p>本小节待填坑。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://legacy.gitbook.com/book/maicss/pyqt5/details" target="_blank" rel="noopener">PyQt5 中文教程</a> 通俗易懂，简洁明了，有广度而不失深度。</li>
+<li><a href="http://doc.qt.io/qt-5/" target="_blank" rel="noopener">Qt Documentation</a> Qt 5 官方文档，<code>C++</code> 语言描述，具备极高的参考价值。</li>
+<li><a href="https://github.com/baoboa/pyqt5/tree/master/examples" target="_blank" rel="noopener">baoboa/pyqt5 - examples</a> PyQt5 代码示例，由于大多数代码较为复杂，所以参考价值一般。</li>
+</ul>
+
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2018/06/07/实验室情况介绍/">实验室情况介绍</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-next">
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="sharethis-inline-share-buttons"></div>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5b1968b08e56ee0011c80452&amp;product=inline-share-buttons' async='async'></script>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">评论</h3>
+    
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://acbetter.com/2018/06/04/PyQt5 and Qt Designer 混合编程教程/';
+        this.page.identifier = '2018/06/04/PyQt5 and Qt Designer 混合编程教程/';
+        
+        this.language = 'zh';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'acbetter' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 AC Better&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" href="https://github.com/acbetter">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        //plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>
