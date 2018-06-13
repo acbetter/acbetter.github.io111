@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>概率论与数理统计备忘录 - AC Better&#39;s Blog | 小君博客。</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+
+
+<link rel="icon" href="/favicon.ico">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    AC Better
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="https://github.com/acbetter">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            概率论与数理统计备忘录
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2017-04-08T10:35:00.000Z" itemprop="datePublished">1 年前</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            6 分钟 读完 (约 970 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="六种常见概率分布"><a href="#六种常见概率分布" class="headerlink" title="六种常见概率分布"></a>六种常见概率分布</h2><h3 id="两点分布"><a href="#两点分布" class="headerlink" title="两点分布"></a>两点分布</h3><p>若随机变量 $X$ 只可能取 $x_1$ 与 $x_2$ 两值，它的分布律为<br>$$<br>P{X=x_1}=1-p\quad(0&lt;p&lt;1), \<br>P{X=x_2}=p,<br>$$<br>则称 $X$ 服从参赛为 $p$ 的两点分布.</p>
+<p>特别的，当 $x_1=0,x_2=1$ 时，两点分布也叫 $(0-1)$ 分布，记作 $X~(0-1)$ 分布.</p>
+<h3 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h3><p>若随机变量 $X$ 的分布律为<br>$$<br>P{X=k}=C^k_np^k(1-p)^{n-k},\quad k=0,1,\dots,n,<br>$$<br>则称 $X$ 服从参数为 $n,p$ 的二项分布 (binomial distribution)，记作 $X\sim b(n,p)$.</p>
+<h3 id="泊松分布"><a href="#泊松分布" class="headerlink" title="泊松分布"></a>泊松分布</h3><p>若随机变量 $X$ 的分布律为<br>$$<br>P{X=k}=\frac{\lambda ^ke^{-\lambda}}{k!},\quad k=0,1,2,\dots,<br>$$<br>其中 $\lambda &gt;0$ 是常数，则称 $X$ 服从参数为 $\lambda$ 的泊松分布 (poisson distribution)，记为 $X\sim P(\lambda)$.</p>
+<h3 id="均匀分布"><a href="#均匀分布" class="headerlink" title="均匀分布"></a>均匀分布</h3><p>若连续型随机变量 $X$ 具有概率密度<br>$$<br>f(x)=<br>\begin{cases}<br>\frac{1}{b-a},&amp; a&lt;x&lt;b,\<br>0,&amp; 其他,<br>\end{cases} \<br>$$<br>则称 $X$ 在区间 $(a,b)$ 上服从均匀分布 (uniform distribution)，记为 $X\sim U(a,b)$.</p>
+<h3 id="指数分布"><a href="#指数分布" class="headerlink" title="指数分布"></a>指数分布</h3><p>若随机变量 X 的密度函数为<br>$$<br>f(x)=<br>\begin{cases}<br>\lambda e^{-\lambda x},&amp; x&gt;0,\<br>0,&amp; x\ge0,<br>\end{cases}<br>$$<br>其中 $\lambda&gt;0$ 为常数，则称 $X$ 服从参数为 $\lambda$ 的指数分布 (exponential distribution) ，记作 $X\sim E(\lambda)$.</p>
+<h3 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h3><p>若连续型随机变量 $X$ 的概率密度为<br>$$<br>f(x)=\frac{1}{\sqrt{2\pi\sigma}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, -\infty&lt;x&lt;+\infty,<br>$$<br>其中 $\mu$,$\sigma(\sigma&gt;0)$ 为常数，则称 $X$ 服从参数为 $\mu$,$\sigma$ 的正态分布 (normal distribution) ，记为 $X\sim N(\mu,\sigma^2)$.</p>
+<h3 id="公式总结"><a href="#公式总结" class="headerlink" title="公式总结"></a>公式总结</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">概率分布</th>
+<th style="text-align:center">记法</th>
+<th style="text-align:center">分布函数</th>
+<th style="text-align:center">数学期望</th>
+<th style="text-align:center">方差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">两点分布：$(0-1)$</td>
+<td style="text-align:center">$X~(0-1)$</td>
+<td style="text-align:center">略</td>
+<td style="text-align:center">$p$</td>
+<td style="text-align:center">$p(1-p)$</td>
+</tr>
+<tr>
+<td style="text-align:center">二项分布／伯努利分布</td>
+<td style="text-align:center">$X\sim b(n,p)$</td>
+<td style="text-align:center">略</td>
+<td style="text-align:center">$np$</td>
+<td style="text-align:center">$np(1-p)$</td>
+</tr>
+<tr>
+<td style="text-align:center">泊松分布</td>
+<td style="text-align:center">$X\sim P(\lambda)$</td>
+<td style="text-align:center">略</td>
+<td style="text-align:center">$\lambda$</td>
+<td style="text-align:center">$\lambda$</td>
+</tr>
+<tr>
+<td style="text-align:center">均匀分布</td>
+<td style="text-align:center">$X\sim U(a,b)$</td>
+<td style="text-align:center">$F(x)=\begin{cases}0,&amp;x&lt;a,\\frac{x-a}{b-a},&amp;a\le x&lt;b,\1,&amp;x\ge b.\end{cases}$</td>
+<td style="text-align:center">$\frac{a+b}{2}$</td>
+<td style="text-align:center">$\frac{(b-a)^2}{12}$</td>
+</tr>
+<tr>
+<td style="text-align:center">指数分布</td>
+<td style="text-align:center">$X\sim E(\lambda)$</td>
+<td style="text-align:center">$F(x)=\begin{cases}1-e^{-\lambda x},&amp;x&gt;0,\0,&amp;x\le0.\end{cases}$</td>
+<td style="text-align:center">$\frac{1}{\lambda}$</td>
+<td style="text-align:center">$\frac{1}{\lambda^2}$</td>
+</tr>
+<tr>
+<td style="text-align:center">正态分布</td>
+<td style="text-align:center">$X\sim N(\mu,\sigma^2)$</td>
+<td style="text-align:center">$F(x)=\frac{1}{\sqrt{2\pi\sigma}}\int_{-\infty}^x e^{-\frac{(t-\mu)^2}{2\sigma^2}}dt$</td>
+<td style="text-align:center">$\mu$</td>
+<td style="text-align:center">$\sigma^2$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="大数定律与中心极限定理"><a href="#大数定律与中心极限定理" class="headerlink" title="大数定律与中心极限定理"></a>大数定律与中心极限定理</h2><p>TODO</p>
+<h1 id="数理统计"><a href="#数理统计" class="headerlink" title="数理统计"></a>数理统计</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="随机样本"><a href="#随机样本" class="headerlink" title="随机样本"></a>随机样本</h3><p>样本平均值<br>$$<br>\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i<br>$$<br>样本方差（无偏估计）<br>$$<br>S^2=\frac{1}{n-1}\sum_{i=1}^n{X_i-\bar{X}}^2=\frac{1}{n-1}(\sum_{i=1}^{n}X_i^2-n\bar{X^2})<br>$$<br>样本方差（有偏估计）<br>$$<br>{S^*}^2=\frac{1}{n}\sum_{i=1}^n{X_i-\bar{X}}^2<br>$$</p>
+<h3 id="抽样估计"><a href="#抽样估计" class="headerlink" title="抽样估计"></a>抽样估计</h3><h4 id="卡方分布"><a href="#卡方分布" class="headerlink" title="卡方分布"></a>卡方分布</h4><p>设 $X_1,X_2,\dots,X_n$ 是来自总体 $N(0,1)$ 的样本，则统计量<br>$$<br>\chi^2=X_1^2+X_1^2+\dots+X_n^2<br>$$<br>所服从的分布称为自由度为 $n$ 的 $\chi^2$ 分布 ($\chi^2$ - distribution) ，记为 $\chi^2\sim\chi^2(n)$.</p>
+<p>$\chi^2(n)$ 分布的概率密度函数为<br>$$<br>f_n(y)=<br>\begin{cases}<br>{\frac{1}{2^{n/2}\Gamma(n/2)}}y^{n/2-1}e^{-y/2},&amp;y&gt;0,\<br>0,&amp; other,<br>\end{cases}<br>$$<br>其中，伽玛函数（Gamma函数）$\Gamma(z) = \int_{0}^{\infty} \frac{t^{z-1}}{\mathrm{e}^t} \,{\rm{d}}t$</p>
+<p>$\chi^2$ 分布具有以下性质：</p>
+<ol>
+<li>如果 $\chi_1^2\sim\chi^2(n_1)$ , $\chi_2^2\sim\chi^2(n_2)$ ，且它们相互独立，则有 $\chi_1^2+\chi_2^2\sim\chi^2(n_1+n_2)$. 这一性质称为 $\chi^2$ 分布的可加性.</li>
+<li>如果 $\chi^2\sim\chi^2(n)$ , 则有 $E(\chi^2)=n$ , $D(\chi^2)=2n$.</li>
+</ol>
+<h4 id="学生t-分布"><a href="#学生t-分布" class="headerlink" title="学生t-分布"></a>学生t-分布</h4><p>设 $X\sim N(0,1),Y\sim\chi^2(n)$ ，并且 $X , Y$ 相互独立，则称随机变量<br>$$<br>t=\frac{X}{\sqrt{Y/n}}<br>$$<br>服从自由度为 $n$ 的 $t$ 分布 (t-distribution) ，记为 $t\sim t(n)$.</p>
+<h4 id="F-分布"><a href="#F-分布" class="headerlink" title="F-分布"></a>F-分布</h4><p>设 $U\sim\chi^2(n_1),V\sim\chi^2(n_2)$ ，且 $U,V$ 独立，则称随机变量<br>$$<br>F = \frac{U/n_1}{V/n_2}<br>$$<br>服从自由度为 $(n_1,n_2)$ 的 $F$ 分布 (F-distribution)，记为 $F\sim F(n_1,n_2)$.</p>
+<h4 id="正态总体的样本均值与样本方差的分布"><a href="#正态总体的样本均值与样本方差的分布" class="headerlink" title="正态总体的样本均值与样本方差的分布"></a>正态总体的样本均值与样本方差的分布</h4><p>设正态总体的均值为 $\mu$ ，方差为 $\sigma^2,X_1,X_2,\dots,X_n$ 是来自正态总体 $X$ 的一个简单样本，则总有<br>$$<br>E(\bar{X})=\mu,<br>D(\bar{X})=\sigma^2/n,<br>\bar{X}\sim N(\mu,\sigma^2/n).<br>$$<br>对于正态总体 $N(\mu,\sigma^2)$ 的样本方差 $S^2$ ，我们有以下的性质（定理）.</p>
+<ol>
+<li><p>设 $X_1,X_2,\dots,X_n$ 是总体 $N(\mu,\sigma^2)$ 的样本，$\bar{X},S^2$ 分别是样本均值和样本方差，则有</p>
+<ol>
+<li>$\frac{(n-1)S^2}{\sigma^2}\sim\chi^2(n-1)$ ;</li>
+<li>$\bar{X}$ 与 $S^2$ 相互独立.</li>
+<li>$\frac{\bar{X}-\mu}{S/\sqrt{n}}\sim t(n-1)$</li>
+</ol>
+</li>
+<li><p>设 $X_1,X_2,\dots,X_{n_1}$ 与 $Y_1,Y_2,\dots,Y_{n_2}$ 分别是来自具有相同方差的两正态总体 $N(\mu_1,\sigma^2),N(\mu_2,\sigma^2)$ 的样本，且这两个样本相互独立. 设 $\bar{X}=\frac{1}{n_1}\sum_{i=1}^{n_1}{X_i},\bar{Y}=\frac{1}{n_2}\sum_{i=1}^{n_2}{Y_i}$ 分别是这两个样本的均值，$S_1^2=\frac{1}{n_1-1}\sum_{i=1}^{n_1}({X_i-\bar{X})^2},S_2^2=\frac{1}{n_2-1}\sum_{i=1}^{n_2}({Y_i-\bar{Y})^2}$ 分别是这两个样本的样本方差，则有<br>$$<br>\frac{(\bar{X}-\bar{Y})-(u_1-u_2)}{S_\omega\sqrt{1/n_1+1/n_2}}\sim t(n_1+n_2-2),<br>$$<br>其中 $S_\omega^2=\frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$.</p>
+</li>
+</ol>
+
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2017/07/13/如何打造一台高生产力的 macOS/">如何打造一台高生产力的 macOS</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-next">
+            
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="sharethis-inline-share-buttons"></div>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5b1968b08e56ee0011c80452&amp;product=inline-share-buttons' async='async'></script>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">评论（需挂代理软件加载）</h3>
+    
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://acbetter.com/2017/04/08/概率论与数理统计备忘录/';
+        this.page.identifier = '2017/04/08/概率论与数理统计备忘录/';
+        
+        this.language = 'zh';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'acbetter' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2018 AC Better&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" href="https://github.com/acbetter">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        //plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120519766-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120519766-1');
+</script>
+
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>
