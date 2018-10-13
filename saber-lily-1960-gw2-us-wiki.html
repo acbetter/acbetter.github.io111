@@ -1,0 +1,639 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>激战2 美服资料整理</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; padding-bottom: 70px; overflow-x: visible; }
+.first-line-indent #write div, .first-line-indent #write li, .first-line-indent #write p { text-indent: 2em; }
+.first-line-indent #write div :not(p):not(div), .first-line-indent #write div.md-htmlblock-container, .first-line-indent #write p *, .first-line-indent pre { text-indent: 0px; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write > blockquote:first-child, #write > div:first-child, #write > figure:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > ul:first-child { margin-top: 30px; }
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/acbetter/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/acbetter/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/acbetter/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/acbetter/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff')
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write{
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 20px 30px 40px 30px;
+	padding-top: 20px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/acbetter/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 4px 2px 4px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media screen and (min-width: 914px) {
+    /*body {
+        width: 854px;
+        margin: 0 auto;
+    }*/
+}
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name='header-n2' class='md-header-anchor '></a>开场白</h1><p>大家好，我是 Saber Lily.1960，这是由我在美服游玩过程中随手记录的资料，现在加以整理，目前该资料在我的个人网站 acbetter.com 上面持续更新，请收藏好本网页。</p><h1><a name='header-n4' class='md-header-anchor '></a>激战 2 游戏介绍</h1><p>《激战 2》（英语：Guild Wars 2）是由 ArenaNet 研发的一款幻想 MMORPG 游戏。这是作为 2007 发布的《激战》系列最后一个版本《极地之眼》的一个续集。激战 2 Living World 动态世界补丁《失落的海岸》于 2012 年 11 月 15 日上线。</p><p>目前官方共释出 2 份资料片，第一份为 2015 年 3 月 12 日释出的《荆棘之心 Heart of Thorns》。第二份为 2017 年 9 月 22 日释出的《赤焰征途 Path of Fire》。荆棘之心描述在泰瑞亚大陆西方，一头名为「默德芒斯 Mordremoth」的亘古巨龙苏醒，玩家必要击败他。赤焰征途描述在经过僵尸巨龙赛坦Zhaitan及丛林巨龙默德芒斯死后，生态平衡崩裂。此时，六真神之一的巴萨泽，带来了他的大军到泰瑞亚大陆，要杀死六巨龙之一的「克拉卡多里克 Kralkatorrik」，以吸取它的能量，成为唯一真神。而玩家，得要阻止它疯狂的行动。</p><p>真正的 <strong>激战 2</strong> 玩家，睿智、恬淡、懂得生活，<strong>人物、战场、专精、PVP</strong> 全部满级，闲时<u>六图挖挖乐</u>，<del>四门、虫王、联赛</del>不缺席，称号皮肤一应俱全，玩 <strong>激战 2</strong> 这款休闲游戏，你看，他现在快20岁了，精神还是一样抖擞！</p><p><img src='https://i.jpg.dog/img/b1472c53fac8929136b0f95f31a342ee.jpg' alt='b1472c53fac8929136b0f95f31a342ee.jpg' referrerPolicy='no-referrer' /></p><h1><a name='header-n9' class='md-header-anchor '></a>美服介绍及对国服环境的吐槽</h1><p>@Yui 国服就这样，网上商城什么都G8卖，人人全身传奇，美服你一身传奇，很耀眼，很装逼
+@Saber Lily 国服商城乱卖瞎卖，什么都卖，哎，真是快把激战2改成快餐游戏了，氪金送全套传奇，一刀999了解一下 
+@Saber Lily 美服装备成本很高，主要是没有国服各种送传奇、买传奇的操作......
+@Saber Lily 推荐你们先建个号，选kaineng服务器随便创建个角色，占个坑位，现在kaineng服务器负载very high，等到他的负载high的时候，你想进也进不去了
+@Saber Lily 美服战场还是很好玩的，激情碰撞，听说kaineng也有个华人指挥，kaineng服务器kda数据挺不错的，也是很老牌的战场服务器了
+@Vcc(tieba) 免费新号跟好赛季pvp就行混牌子和粉装，资料片等打折，估计万圣节应该就能打折，每天再打个teq和虫子</p><h2><a name='header-n11' class='md-header-anchor '></a>收购美服账号？洗洗睡吧</h2><p>美服不是国服，国服有官方交易账户的平台，美服则禁止玩家交易账号，劝你别买，可以凭付款凭证找回的。如果真的不想从头开始玩，那我推荐你买真的退坑号，找好担保，并且祈祷不会被找回。在美服，找回账号也就一个工单的事情，发 Ticket，说自己账号异地非本人登陆就 OK 了，所以一定要找靠谱的人和靠谱的担保。</p><h2><a name='header-n13' class='md-header-anchor '></a>重要！美服资料片购买事项！</h2><p>如果想官网购买的话，不要挂代理和微批嗯，填国内地址，注册 Paypal，绑定国内四大行银联卡，支付购买，激活码到手后再等24小时，检查银行卡账单，确认是否正确扣款并没有退款，再激活。如果你身在国外，推荐官网购买。</p><p>由于本人居住在国内，多次官网购买失败，天天被砍单，所以托在国外的朋友在 Dlgamer 上代购了资料片。建议国内的小伙伴在 Cdkeys 上面购买激活码，并在游戏内绑定激活码，记得不要挂代理和和微批嗯哦。如果是找国外代购激活码的话，推荐找到靠谱的担保，不要忘记给代购费和担保费哦。实在搞不定的可以联系各大华人公会群主/管理员/国外朋友或加我扣扣私聊。</p><p>淘宝什么的走开走开。<del>宝石卡可以淘宝买，买资料片的话就洗洗睡吧</del>。</p><h1><a name='header-n17' class='md-header-anchor '></a>玩法详解（PVE、PVP 和 WVW）</h1><h2><a name='header-n18' class='md-header-anchor '></a>PVE Players vs World</h2><h3><a name='header-n19' class='md-header-anchor '></a>跑图 Map Completion</h3><details><summary>萌新：在美服没买资料片不能狮子拱门？</summary>
+角色 35 级之前，如果没有买资料片的话，是无法开启狮子拱门这张地图的。所以要么升级，要么买资料片。国服由于一上来就送《荆棘之心 Heart of Thorns》资料片，所以可以直接去狮子拱门。
+</details><p>别问我怎么跑图，问就看 <a href='https://www.bilibili.com/video/av7007403'>金昆 激战2 泰瑞亚百分百 全图篇 哔哩哔哩弹幕视频</a>，这里啰嗦两句，跑图基本上是萌新们主要的升级途径，一般建议先把各个主城跑了，这样你就有大约十多级，然后再把各个新手村（1-15）跑了，由于这游戏加经验是按百分比加的，所以不要担心自己比当前地图高很多级，就会少吃很多经验。一般来说，自己的等级最好比地图的等级高个五到十级，会有很良好的跑图体验。</p><p>这里推荐两个视频，<a href='http://v.youku.com/v_show/id_XMTQxMTY1MDA2OA==.html'>金昆 激战 2 人类新手村 剧情指引 优酷视频</a> 和 <a href='http://v.youku.com/v_show/id_XMTM1NzIxMjM5Mg==.html'>金昆 激战 2 新手怎样直达各大主城攻略视频 专业解说 优酷视频</a>，加起来才十二分钟，却可以解决很多问题，推荐萌新来看。</p><p>有些萌新问什么技能点怎么加，建议优先把位移和移速点出来，可以有效节省跑路时间，不要担心技能点不够，因为仅通过升级来获得的技能点足够你把老特性技能点都点满了。某个职业的跑图加点可以去后文的 <a href='#header-n147'>职业介绍</a> 章节查阅，在此先不多讲。</p><h3><a name='header-n24' class='md-header-anchor '></a>世界 Boss</h3><h4><a name='header-n25' class='md-header-anchor '></a>吞噬托 僵尸龙 Tequatl the Sunless（Teq）</h4><p>僵尸龙位于 <strong>闪萤沼泽（Sparkfly Fen 55-65）</strong>，传送点 [&amp;BNABAAA=]，无需资料片，收益 2g 及上万 Karma，大量红专精经验，有极低概率掉出粉武器箱子，可以按需选择单手或双手武器，武器外观以白色和粉色为主，无特效。</p><p>推荐时间：北京时间偶数整点，在 LFG-Opening World-World Bosses 寻找 Teq Taxi Train 之类的团加入，最好提前十五到二十分钟过来占线。</p><p>经验蹭法：一上来先远程输出，然后在连蹭四个守卫事件（需要强力抢怪职业及肉食鸟坐骑）和近战输出僵尸龙之间来回循环，直到拿到 Boss 奖励。</p><p>注意事项：别被僵尸龙一脚踩死，也不要站在绿圈被毒死。</p><p>推荐频率：无论是萌新和半萌新，都推荐每日一刷，拿个低保 2g 和 1.5w karma。爆出自选武器的粉装箱子选你缺的武器，要是啥都缺就先留着，以后再打开，选出来的武器属性不太好，自己记得去拍卖行或马桶商人那里买材料换属性。</p><h4><a name='header-n31' class='md-header-anchor '></a>三重麻烦 Triple Trouble Wurm （TT）</h4><p>三重麻烦位于<strong>血潮海岸（Bloodtide Coast 45-55）</strong>，传送点 [&amp;BKoBAAA=]，无需资料片，收益 2g 及若干 Karma，有很低概率可以出粉装箱子，可以选择头部、肩部和手部，有绿雾特效。</p><p>推荐时间：北京时间星期一到星期日每天上午十一点半或下午四点二十，在 LFG-Opening World-World Bosses 寻找 [RnT] TT Taxi 之类的团加入，RnT 公会带队，包食物，指挥给力，包稳过。</p><p>注意事项：这个三重麻烦好像真的有点麻烦诶，<del>有时三重会出现血条 Bug，导致突然失败，请耐心听候 Pin 指挥，由于是公会带队，失败的话可以进行事件重置，不过好像扯远了</del>。萌新不要乱打怪，指挥说 OFF 或 No Adam 的时候，停火，不要乱打，否则有概率会导致整个事件的失败，几百号人又要重新打一遍不说，没准你早被暴躁老哥骂惨了。为什么会失败呢，三重麻烦有三条线，每一条线的 Boss 都要在同一个时间段死去，否则算作失败，而每一条线都有每一条线的输出节奏，所以经常要等待另两条线的进度。萌新初次打请跟好 Pin，Pin 站哪你就站哪，Pin 打谁你就打谁，Pin 怎么走位你就怎么走，无脑跟 Pin 就是了。</p><p>推荐频率：推荐萌新每天一刷，初期 2g 还是很关键的，爆出粉装箱子就省你 60g 做粉装的钱，开出来的粉装属性不太对，自己记得去拍卖行或马桶商人那里买材料换属性。后期随缘或看需求。</p><p>想找到关于 RnT 公会的更多信息，请移步 <a href='#%E7%9B%AE%E5%89%8D%E6%B4%BB%E8%B7%83%E5%85%AC%E4%BC%9A%E6%8E%A8%E8%8D%90'>目前活跃公会推荐</a> 板块。</p><h4><a name='header-n37' class='md-header-anchor '></a>查克虫王 Gerent</h4><p>虫王位于 <strong>缠藤深渊（Trangled Depths 80）</strong>，需要购买 HoT 资料片才可以打，没有购买资料片的每天打好僵尸龙和三重麻烦就行了。这个 Boss 有四条线，阻止四个 Gerent，要开打的时候一般有四个 Pin，你选一个 Pin 跟好就是了（操作不好很容易挂掉，跟紧，别挂）。<del>如果自己这条线打的快的话，可以去别的线帮忙</del>。有极低概率出查克虫灌注，价值在 15000g 以上，<strong>推荐欧皇来打</strong>。</p><p>推荐时间：北京时间星期一到星期五每天晚上八点半，在 LFG-Opening World-Trangled Depths 里面找到 [EVA] 开头的团加入，推荐早半个小时过来占线，也就是晚上八点进组切图占线。</p><p>推荐频率：随缘或每日一刷以检测自己今天的欧气是否满满。</p><p>想找到关于 EVA 公会的更多信息，请移步 <a href='#%E7%9B%AE%E5%89%8D%E6%B4%BB%E8%B7%83%E5%85%AC%E4%BC%9A%E6%8E%A8%E8%8D%90'>目前活跃公会推荐</a> 板块。</p><h4><a name='header-n42' class='md-header-anchor '></a>其他世界 Boss</h4><p>其他的话，我基本上都打过，没咋出货，感觉收益不大，没啥必要就不多讲了，比较热门的有 [&amp;BE4DAAA=] The Shatterer 和 [&amp;BNcGAAA=] Karka Queen 等，想打就打打吧。各大世界 Boss 出现的世界是有规律的，推荐使用 <a href='https://gw2timer.com/'>GW2Timer.com</a> 查看刷新时间并合理安排。</p><h3><a name='header-n44' class='md-header-anchor '></a>世界动态第二季 Living World Season 2</h3><p>这部分我没买，所以不清楚，个人感觉优先度并不是很高。</p><h3><a name='header-n46' class='md-header-anchor '></a>HoT 荆棘之心地图之 Meta Event</h3><p>HoT 迈古玛这个资料片的图，怪都比较厉害，地形非常复杂多变，开荒跑图是建议带上小伙伴一起跑，或者选择如死灵游侠这类强力野外职业，打技能点最好多叫几个人。在 HoT 地图 中你会解锁绿专精，得到绿专精经验，关于专精更多的详情和如何加点，请移步 <a href='#%E4%B8%93%E7%B2%BE%E4%BB%8B%E7%BB%8D'>专精介绍</a> 章节。</p><p>HoT 的地图就没爱心了，取而代之的是各种 Event 和 Meta Event。Event 是小事件，虽然都不太好做但是前期多打打，混点绿专精经验，把滑翔和弹跳菇点上就会好很多；Meta Event 是地图大事件，一般都由上百号人共同合作完成，有VB、AB、TD 和 DS 四大 Meta Event，前期如果时间多的话，推荐每天一条龙，绿专精经验涨的飞快。</p><p>HoT 地图 Meta Event 参考表，至于时间请参考 <a href='https://gw2timer.com'>GW2Timer.com</a> 或者去找一条龙公会如 EVA 等。想找到关于 EVA 公会的更多信息，请移步 <a href='#%E7%9B%AE%E5%89%8D%E6%B4%BB%E8%B7%83%E5%85%AC%E4%BC%9A%E6%8E%A8%E8%8D%90'>目前活跃公会推荐</a> 板块。</p><figure><table><thead><tr><th>缩写</th><th>英文名称</th><th>翻译</th><th>Meta 事件攻略</th><th>如何开启</th><th>其他</th></tr></thead><tbody><tr><td>VB</td><td><a href='https://wiki.guildwars2.com/wiki/Verdant_Brink'>Verdant Brink</a></td><td>苍翠边界</td><td><a href='https://www.bilibili.com/video/av7024208/?p=19'>直升机 Choppers</a></td><td><a href='https://wiki.guildwars2.com/wiki/Prologue:_Rally_to_Maguuma'>Prologue: Rally to Maguuma</a></td><td>萌新劝退图</td></tr><tr><td>AB</td><td><a href='https://wiki.guildwars2.com/wiki/Auric_Basin'>Auric Basin</a></td><td>赤金盆地</td><td><a href='https://www.bilibili.com/video/av7026322/?p=7'>四门 Octovine</a></td><td><a href='https://wiki.guildwars2.com/wiki/Noble_Ledges#Treacherous_Path_Waypoint'>Treacherous Path Waypoint</a></td><td>萌新友爱图</td></tr><tr><td>TD</td><td><a href='https://wiki.guildwars2.com/wiki/Tangled_Depths'>Tangled Depths</a></td><td>缠藤深渊</td><td><a href='https://www.bilibili.com/video/av7119806/?p=27'>虫王 Gerent</a></td><td><a href='https://wiki.guildwars2.com/wiki/Chak_Hollow'>Chak Hollow</a></td><td>欧皇的天堂</td></tr><tr><td>DS</td><td><a href='https://wiki.guildwars2.com/wiki/Dragon%27s_Stand'>Dragon&#39;s Stand</a></td><td>巨龙阵地</td><td><a href='https://www.bilibili.com/video/av7132799/?p=3'>巨龙 Assault</a></td><td><a href='https://wiki.guildwars2.com/wiki/Ley-Line_Confluence'>Ley-Line Confluence</a></td><td>组队打巨龙</td></tr></tbody></table></figure><p><strong>萌新请注意</strong>，HoT 的图这么难，建议一开始就看跑图攻略视频，<del>不然会被小怪虐到怀疑人生</del>，金昆在 B 站上有各个图的跑图视频，讲解的很详细，里面还会穿插讲一些 Meta 事件的打法，推荐来看：<a href='https://www.bilibili.com/video/av7024208'>金昆 激战 2 苍翠边界《全图、全专精、全成就》</a>，<a href='https://www.bilibili.com/video/av7026322'>金昆 激战 2 赤金盆地《全图、全专精、全成就》</a>，<a href='https://www.bilibili.com/video/av7119806'>金昆 激战 2 缠藤深渊《全图、全专精、全成就》</a>和<a href='https://www.bilibili.com/video/av7132799'>金昆 激战 2 巨龙阵地《全图、全专精、全成就》</a>。</p><h3><a name='header-n389' class='md-header-anchor '></a>世界动态第三季之六图挖挖乐 Living World Season 3</h3><p>有六个章节，每个章节解锁一张采集地图就是了。采集得到的<strong>六种地图牌子（<img src='https://wiki.guildwars2.com/images/thumb/1/14/Blood_Ruby.png/20px-Blood_Ruby.png' alt='Blood Ruby.png' referrerPolicy='no-referrer' /><a href='https://wiki.guildwars2.com/wiki/Ember_Bay'><img src='https://wiki.guildwars2.com/images/thumb/0/00/Petrified_Wood.png/20px-Petrified_Wood.png' alt='Petrified Wood.png' referrerPolicy='no-referrer' /></a><a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'><img src='https://wiki.guildwars2.com/images/thumb/b/b8/Fresh_Winterberry.png/20px-Fresh_Winterberry.png' alt='Fresh Winterberry.png' referrerPolicy='no-referrer' /></a><a href='https://wiki.guildwars2.com/wiki/Lake_Doric'><img src='https://wiki.guildwars2.com/images/thumb/1/11/Jade_Shard.png/20px-Jade_Shard.png' alt='Jade Shard.png' referrerPolicy='no-referrer' /></a><a href='https://wiki.guildwars2.com/wiki/Draconis_Mons'><img src='https://wiki.guildwars2.com/images/thumb/e/ed/Fire_Orchid_Blossom.png/20px-Fire_Orchid_Blossom.png' alt='Fire Orchid Blossom.png' referrerPolicy='no-referrer' /></a><a href='https://wiki.guildwars2.com/wiki/Siren%27s_Landing'><img src='https://wiki.guildwars2.com/images/thumb/9/9c/Orrian_Pearl.png/20px-Orrian_Pearl.png' alt='Orrian Pearl.png' referrerPolicy='no-referrer' /></a>）</strong>和<strong>未受约束的魔法（<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a>Unbound Magic）</strong>可以换粉色<strong>耳环/饰品（Accessory）</strong>、<strong>戒指（Ring）</strong>、<strong>背部（Back Item）</strong>和<strong>护身符/项链（Amulet）</strong>，<strong>六图挖挖乐是萌新时期重要的粉色首饰免费产出来源</strong>，后期也很有用，推荐大家来购买解锁世界动态第三季。</p><p>六图挖挖乐粉色首饰产出表</p><figure><table><thead><tr><th>地图名字</th><th>中文翻译</th><th>戒指</th><th>饰品</th><th>背部</th><th>项链</th></tr></thead><tbody><tr><td><a href='https://wiki.guildwars2.com/wiki/Bloodstone_Fen'><img src='https://wiki.guildwars2.com/images/thumb/1/14/Blood_Ruby.png/20px-Blood_Ruby.png' alt='Blood Ruby.png' referrerPolicy='no-referrer' /></a> <a href='https://wiki.guildwars2.com/wiki/Bloodstone_Fen'>Bloodstone Fen</a></td><td>血石沼泽</td><td>100<a href='https://wiki.guildwars2.com/wiki/Bloodstone_Fen'><img src='https://wiki.guildwars2.com/images/thumb/1/14/Blood_Ruby.png/20px-Blood_Ruby.png' alt='Blood Ruby.png' referrerPolicy='no-referrer' /></a>+2k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>&nbsp;</td><td>200<a href='https://wiki.guildwars2.com/wiki/Bloodstone_Fen'><img src='https://wiki.guildwars2.com/images/thumb/1/14/Blood_Ruby.png/20px-Blood_Ruby.png' alt='Blood Ruby.png' referrerPolicy='no-referrer' /></a>+5k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>125<a href='https://wiki.guildwars2.com/wiki/Bloodstone_Fen'><img src='https://wiki.guildwars2.com/images/thumb/1/14/Blood_Ruby.png/20px-Blood_Ruby.png' alt='Blood Ruby.png' referrerPolicy='no-referrer' /></a>+3k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td></tr><tr><td><a href='https://wiki.guildwars2.com/wiki/Ember_Bay'><img src='https://wiki.guildwars2.com/images/thumb/0/00/Petrified_Wood.png/20px-Petrified_Wood.png' alt='Petrified Wood.png' referrerPolicy='no-referrer' /></a> <a href='https://wiki.guildwars2.com/wiki/Ember_Bay'>Ember Bay</a></td><td>余烬海湾</td><td>&nbsp;</td><td>150<a href='https://wiki.guildwars2.com/wiki/Ember_Bay'><img src='https://wiki.guildwars2.com/images/thumb/0/00/Petrified_Wood.png/20px-Petrified_Wood.png' alt='Petrified Wood.png' referrerPolicy='no-referrer' /></a>+4k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>200<a href='https://wiki.guildwars2.com/wiki/Ember_Bay'><img src='https://wiki.guildwars2.com/images/thumb/0/00/Petrified_Wood.png/20px-Petrified_Wood.png' alt='Petrified Wood.png' referrerPolicy='no-referrer' /></a>+5k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>&nbsp;</td></tr><tr><td><a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'><img src='https://wiki.guildwars2.com/images/thumb/b/b8/Fresh_Winterberry.png/20px-Fresh_Winterberry.png' alt='Fresh Winterberry.png' referrerPolicy='no-referrer' /></a> <a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'>Bitterfrost Frontier</a></td><td>酷寒前线</td><td>200<a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'><img src='https://wiki.guildwars2.com/images/thumb/b/b8/Fresh_Winterberry.png/20px-Fresh_Winterberry.png' alt='Fresh Winterberry.png' referrerPolicy='no-referrer' /></a>+2k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>300<a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'><img src='https://wiki.guildwars2.com/images/thumb/b/b8/Fresh_Winterberry.png/20px-Fresh_Winterberry.png' alt='Fresh Winterberry.png' referrerPolicy='no-referrer' /></a>+4k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>400<a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'><img src='https://wiki.guildwars2.com/images/thumb/b/b8/Fresh_Winterberry.png/20px-Fresh_Winterberry.png' alt='Fresh Winterberry.png' referrerPolicy='no-referrer' /></a>+5k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>&nbsp;</td></tr><tr><td><a href='https://wiki.guildwars2.com/wiki/Lake_Doric'><img src='https://wiki.guildwars2.com/images/thumb/1/11/Jade_Shard.png/20px-Jade_Shard.png' alt='Jade Shard.png' referrerPolicy='no-referrer' /></a> <a href='https://wiki.guildwars2.com/wiki/Lake_Doric'>Lake Doric</a></td><td>多里克湖</td><td>&nbsp;</td><td>&nbsp;</td><td>200<a href='https://wiki.guildwars2.com/wiki/Lake_Doric'><img src='https://wiki.guildwars2.com/images/thumb/1/11/Jade_Shard.png/20px-Jade_Shard.png' alt='Jade Shard.png' referrerPolicy='no-referrer' /></a>+5k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>125<a href='https://wiki.guildwars2.com/wiki/Lake_Doric'><img src='https://wiki.guildwars2.com/images/thumb/1/11/Jade_Shard.png/20px-Jade_Shard.png' alt='Jade Shard.png' referrerPolicy='no-referrer' /></a>+3k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td></tr><tr><td><a href='https://wiki.guildwars2.com/wiki/Draconis_Mons'><img src='https://wiki.guildwars2.com/images/thumb/e/ed/Fire_Orchid_Blossom.png/20px-Fire_Orchid_Blossom.png' alt='Fire Orchid Blossom.png' referrerPolicy='no-referrer' /></a> <a href='https://wiki.guildwars2.com/wiki/Draconis_Mons'>Draconis Mons</a></td><td>巨龙之山</td><td>100<a href='https://wiki.guildwars2.com/wiki/Draconis_Mons'><img src='https://wiki.guildwars2.com/images/thumb/e/ed/Fire_Orchid_Blossom.png/20px-Fire_Orchid_Blossom.png' alt='Fire Orchid Blossom.png' referrerPolicy='no-referrer' /></a>+2k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td><td>&nbsp;</td><td>&nbsp;</td><td>125<a href='https://wiki.guildwars2.com/wiki/Draconis_Mons'><img src='https://wiki.guildwars2.com/images/thumb/e/ed/Fire_Orchid_Blossom.png/20px-Fire_Orchid_Blossom.png' alt='Fire Orchid Blossom.png' referrerPolicy='no-referrer' /></a>+3k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td></tr><tr><td><a href='https://wiki.guildwars2.com/wiki/Siren%27s_Landing'><img src='https://wiki.guildwars2.com/images/thumb/9/9c/Orrian_Pearl.png/20px-Orrian_Pearl.png' alt='Orrian Pearl.png' referrerPolicy='no-referrer' /></a> <a href='https://wiki.guildwars2.com/wiki/Siren%27s_Landing'>Siren&#39;s Landing</a></td><td>海妖平台</td><td>&nbsp;</td><td>&nbsp;</td><td>200<a href='https://wiki.guildwars2.com/wiki/Siren%27s_Landing'><img src='https://wiki.guildwars2.com/images/thumb/9/9c/Orrian_Pearl.png/20px-Orrian_Pearl.png' alt='Orrian Pearl.png' referrerPolicy='no-referrer' /></a>+315k<a href='https://wiki.guildwars2.com/wiki/Karma'><img src='https://wiki.guildwars2.com/images/a/af/Karma.png' alt='Karma.png' referrerPolicy='no-referrer' /></a></td><td>125<a href='https://wiki.guildwars2.com/wiki/Siren%27s_Landing'><img src='https://wiki.guildwars2.com/images/thumb/9/9c/Orrian_Pearl.png/20px-Orrian_Pearl.png' alt='Orrian Pearl.png' referrerPolicy='no-referrer' /></a>+3k<a href='https://wiki.guildwars2.com/wiki/Unbound_Magic'><img src='https://wiki.guildwars2.com/images/thumb/f/f5/Unbound_Magic.png/20px-Unbound_Magic.png' alt='Unbound Magic.png' referrerPolicy='no-referrer' /></a></td></tr></tbody></table></figure><p>一个角色需要两个戒指，两个饰品，一个背部，一个项链。</p><p>建议萌新每天去酷寒前线挖<a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier'><img src='https://wiki.guildwars2.com/images/thumb/b/b8/Fresh_Winterberry.png/20px-Fresh_Winterberry.png' alt='Fresh Winterberry.png' referrerPolicy='no-referrer' /></a>新鲜的冬浆果，每个满级角色每天大约可以挖五十个冬浆果，你买了资料片可以叮两个到满级，所以你只少有两个满级角色，两天左右一换个戒指，三四天左右换一个饰品，五六天左右换个背部，十多天就可以挖挖挖获得三级粉色首饰，一个角色挖一圈大约需要十到十五分钟，路线可以参考 <a href='https://www.bilibili.com/video/av17163344'>小轩 激战 2 酷寒前线 挖果子路线 哔哩哔哩弹幕视频</a>，挖两次就熟练了。挖完之后可以拿火把开冰冻的箱子，会出各种用来分解的装备，小概率出冬浆果，前期缺材料缺钱缺果子的可以开一圈箱子，开一圈箱子视熟练程度大约需要五到十分钟，路上也可以做做事件，事件奖励的可以分解出比较贵的 T3/T4 材料。其他的满级角色如果既不想做剧情，也不想使用好友传送卷轴的话，你可以用大号在酷寒前线购买 <a href='https://wiki.guildwars2.com/wiki/Bitterfrost_Frontier_Portal_Scroll'>酷寒前线传送卷轴</a> 放银行里给小号拿出来用，其他地图同理也有售对应地图的传送卷轴，请按需购买。一般情况下一个角色不能装备同名字的戒指或饰品两件，所以挖冬浆果对一个角色的收益一般就是一个戒指，一个饰品还有一个背部。</p><p>然后是去海妖平台做爱心<a href='https://wiki.guildwars2.com/wiki/Siren%27s_Landing'><img src='https://wiki.guildwars2.com/images/thumb/9/9c/Orrian_Pearl.png/20px-Orrian_Pearl.png' alt='Orrian Pearl.png' referrerPolicy='no-referrer' /></a>欧尔珍珠搞个项链，<del>做完海妖平台的全部任务还可以赌珍珠</del>。每天大约半个小时到四十五分钟，需花费少量业力和金钱，收益大约五十个欧尔珍珠，任务详情可以参考 <a href='https://www.bilibili.com/video/av18783036'>小轩 激战 2 海妖平台 赌珍珠攻略 哔哩哔哩弹幕视频</a>。搞个项链就行了，背部的话，要好多好多业力，还是多挖挖冬浆果换吧。</p><p>其他的就自己慢慢看需求搞吧，不过提一句，虽然 <a href='https://wiki.guildwars2.com/wiki/Blood_Ruby'><img src='https://wiki.guildwars2.com/images/thumb/1/14/Blood_Ruby.png/20px-Blood_Ruby.png' alt='Blood Ruby.png' referrerPolicy='no-referrer' /></a>血石这玩意很难搞，每天做满日常才七到十多个，但是换出来的装备可以<strong>换属性</strong>，<strong>换属性前先把装备上面乱七八糟的灌注拆了再换</strong>，拆解器就用碎层卖的那个 24 银的拆解器拆了。同理，装备开槽的时候也要先拆灌注再开槽，否则后果自负。</p><p>在你做完剧情，解锁对应地图后，你还可以解锁地图对应的 PVP/WvW 奖励分支，完成一支分支奖励五十个地图代币，推荐做血石或余烬海湾的。</p><h3><a name='header-n88' class='md-header-anchor '></a>PoF 赤焰征途地图之悬赏 Boss</h3><p>PoF 这个资料片的图就没 HoT 那么难了，比较适合萌新上手。做对应地图的悬赏 Boss 也很简单，先把几个关键坐骑拿到（三级肉食鸟/迅猛龙，三级兔子和一级飞鱼），然后跟着 Pin 混就行了，碰到 Boss 躲好技能，<del>11111 完事</del>。</p><h3><a name='header-n90' class='md-header-anchor '></a>五人副本/地下城 Dungeons</h3><p>你升级的路上，总会有人给你发邮件，说是啥啥地下城已经解锁，不用管，萌新跑图就行，地下城是做一些成就及收集部分皮肤的地方，等你想刷到地下城的时候，你那时候早就不是萌新了，我就不多说了。</p><p>部分常用地下城参考表</p><figure><table><thead><tr><th>英文缩写</th><th>英文名称</th><th>中文翻译</th></tr></thead><tbody><tr><td>AC</td><td>Ascalonian Catacombs</td><td>阿斯卡隆</td></tr><tr><td>CM</td><td>Caudecus&#39;s Manor</td><td>考迪克斯庄园</td></tr><tr><td>TA</td><td>Twilight Arbor</td><td>暮光之根</td></tr><tr><td>SE</td><td>Sorrow&#39;s Embrace</td><td>悲伤之拥</td></tr><tr><td>COF</td><td>Citadel of Flame</td><td>烈焰壁垒</td></tr><tr><td>HOTW</td><td>Honor of the Waves</td><td>海浪之誊</td></tr><tr><td>COE</td><td>Crucible of Eternity</td><td>永恒熔炉</td></tr><tr><td>ARAH</td><td>The Ruined City of Arah</td><td>亚拉城废墟</td></tr></tbody></table></figure><h3><a name='header-n130' class='md-header-anchor '></a>迷雾碎层 Fractals of the Mists (FoTM)</h3><p>迷雾碎层是一些五人挑战的集合，入口在狮子拱门的南边，当前角色到达 80 级才可以打，有 100 <strong>层（Fractal Level）</strong>，其中 1-25 为 Tier: 1，俗称 T1，26-50 为 T2，51-75 为 T3，76-100 为 T4。打完第一层解锁第二层，打完第二层解锁第三层，依次类推，这叫做开荒爬层。还有一种爬层是别人带你跨层打，比如你爬到六层，但是别人解锁了第十层，你们两个在同一个队伍，你可以蹭他的层数，从第十层开始爬，如果打通了第十层，别人解锁了第十一层，你就解锁第七层，当前最高<strong>个人碎层等级（Personal Fractal Level）</strong>+1 嘛。每打一层大约需要你十到二十分钟。低层随便打，但是从第 20 层开始需要<strong>痛苦抗性（Agony Resistance）</strong>，层数越高，需要的痛苦抗性就越高。痛苦抗性怎么堆呢，需要使用打碎层箱子开出的<strong>痛苦灌注（Agnoy Infusion）</strong>插在粉色装备上，痛苦灌注有 +1、+2、+3 等，理论最高是 +12，一个 +12 的痛苦灌注可以为你提供 12 点痛苦抗性，不过嘛，大多数人都不会买 +12，这是因为最高层第 100 层需要 150 点痛苦抗性，而一个角色的全套粉装备可以有大约 18 个痛苦灌注槽，如果<strong>全插最经济实惠的 +9</strong> 的话，早就够了，所以没必要搞那么高。经过本人的精打细算，合成 +9 的最好方式是在拍卖会购买 256 个 +1 然后在碎层机器人 INFUZ-5959 商人处花费 3.8g 将其合成为一个 +9 灌注。</p><p>低层碎层的收益很低，日常四连 T1 1g，T2 3-4g，T3 6-8g。T4 保底 10g，可以掉粉装、粉戒指，推荐来打 T4。 什么是日常四连呢，每天随机出四个日常关卡，每打通一个日常关卡就会给你个日常箱子，值得注意的是，如果你直接打通 T4 某日常关卡，就会给你 T1、T2、T3 及 T4 这 4 个日常箱子，箱子内含若干 +1 痛苦灌注，<strong>碎层加密箱（Fractal Encryptions）</strong>以及用来开碎层加密箱的钥匙，碎层加密箱可以开出的东西可以在 <a href='https://wiki.guildwars2.com/wiki/Cracked_Fractal_Encryption'>GW2 OFFICIAL WIKI - Cracked Fractal Encryption</a> 查阅，一般来说萌新时期是钥匙少箱子多，<strong>请把多余的箱子挂黑狮卖掉<del>补贴家用</del></strong>。听劝，不要去购买什么特价加密箱钥匙之类的，牌子留着换无限碎层药剂吧，<del>钱留着做粉装吧</del>！</p><p>然后有一点需要注意，大佬带萌新天天打 T4 日常的时候，为啥大佬掉各种粉装，而我却不掉呢？这不是因为你运气不好，而是因为你的个人碎层等级不够高。比如你个人碎层等级开到 25 级，打完最终 Boss，旁边会有一个金箱子，你一个 F 拾取，拾取的是 25 级的 Boss 掉落，而大佬拾取的至少是 71 级的 Boss 掉落，大佬掉粉装的概率肯定比你高很多很多的。日常箱子不受当前个人碎层等级的影响，所以还是要多找大佬带 T4 啊（当然你抗性得堆满），既可以爬层又有虽然稍低但是较为稳定的经济收入。</p><p>关于<strong>组队（Looking for Group）</strong>，角色到达 80 级会解锁 1-25 等级的 LFG 组队频道，爬到 21 层可以解锁 26-50 的组队频道，46 层解锁 51-75 的组队频道，71 层解锁 75-100 的组队频道。比如你爬到了 18 层，通过 T1 Daily 爬层没有多大提升，这时候你就可以堆好 T2 的抗性让公会大佬带你过一遍 T2 Daily，这样你就解锁了 21 层，下次就可以自己 LFG T2 了。顺便说一下，这游戏打 Daily 的人多，爬层人真少。美服开荒爬层推荐早上八点到十一点，Daily 的话，全时段基本都有人打不必着急。T4 Daily 的话，早上遇到坑队友的概率会稍微小些。T3 坑的人太多了，不推荐打 T3，要打就直接堆满抗性打 T4，早打一天 T4 就早得一天 T4 稳定收益。</p><p>如果对于上面所说的不太理解，请看视频 <a href='https://www.bilibili.com/video/av17358280'>小轩 激战2 玩转碎层 基础篇 哔哩哔哩弹幕视频</a>，这个视频讲得详细一些。</p><p>每一层都有每一层的打法，请参考 <a href='https://docs.google.com/document/d/16bt-vFeeLAeEsaoz72bkc4ZODsudIQ2hiQdvSnFYLtw'>Fractal Zero to Fractal Hero: A beginner&#39;s guide for learning and gearing for Fractals of the Mists. (English)</a>，这也许是迄今为止最为详细的碎层攻略文档，不过是英文的，英语不好的小伙伴要加把劲学习英语哦，玩美服总要掌握或多或少的英语的，建议不懂的生词使用翻译软件进行翻译，其实来回也就那些个单词，熟悉就好了。</p><h3><a name='header-n137' class='md-header-anchor '></a>十人团本 Raids</h3><p>当你有一个直伤职业和一个症状职业（最好都是 Meta Build），并且他们都有相当数量粉装的时候，请联系 Raid 团团长。据我所知，华人公会 Raid 活跃的好像就有 EMP 了，别的不清楚。EMP 简介请移步本攻略 <a href='#%E5%85%AC%E4%BC%9A%E4%BB%8B%E7%BB%8D'>公会介绍</a> 部分。萌新的第一次开团，应该参照 <a href='https://snowcrows.com/'>Snow Crows</a> 和 <a href='https://metabattle.com/wiki/Raid'>Metabattle Raid</a> 的 Build 和输出手法或机场打靶视频，自备食物，在机场打靶进行练习，至少达到其 75% 的输出，然后找到靠谱的公会训练团，连接语音软件，服从指挥，及时交流，态度认真端正，犯错误及时承认，能听取建设性意见并加以改进。不懂就多查资料，实在查不到的一些小细节就问团长或群员，打每个 Boss 前要先去查看自己职业或位置对应视角的非速刷视频，了解流程及注意的点，理解 Boss 的阶段或技能等。</p><p>啥？机场？请看视频 <a href='https://www.bilibili.com/video/av17205420'>小轩 激战 2 机场是个啥？老司机带你走近狮子拱门机场 哔哩哔哩弹幕视频</a>。</p><p>说了这么多，肯定有人说这些好繁琐啊，但是你要记住，<strong>十人团本奖励超级超级豪华</strong>，各种粉装，大量稀有材料，最重要的是 <strong>PVE 专属传奇护甲</strong>！PVE 专属传奇护甲代表着一个玩家在十人团本中获得的最高荣誉，这里有些 B 站上的预览视频可以预览下：<a href='https://www.bilibili.com/video/av12588393'>重甲</a> <a href='https://www.bilibili.com/video/av12588804'>中甲</a> <a href='https://www.bilibili.com/video/av12589198'>轻甲</a>，好看不好看的话，仁者见仁智者见智咯。就算你不做 PVE 专属传奇护甲，十人团本的收益也是相当相当高的，<strong>难度大，收益超级高</strong>。</p><h2><a name='header-n140' class='md-header-anchor '></a>玩家对抗 PVP Players vs Players</h2><p>如果你不太喜欢天天打碎层，酷爱和对面玩家搞事情，那么 PVP 是一个不错的选择，在激战 2 中，PVP 没有属性压制，真正的 5V5 公平对决，要想赢得比赛，全靠个人实力<del>及强力队友 Carry</del>，萌新由于技术不太过关，也许经常被虐到怀疑人生。萌新玩 PVP 的话，推荐使用 <a href='https://metabattle.com/wiki/Conquest'>Metabattle Conquest</a> 较为强力的职业及 Build，老手请随意。</p><p>PVP 一般都指 Conquest 占点图，占点給积分，做特定事件也给积分，哪一队先到 500 分则获胜。在非排位比赛中，赢一局加 1500 <strong>PVP 经验（PVP Rank Points）</strong>，输一局加 500 PVP 经验，获得最佳状态等牌子也可以获得PVP 经验，但是少的可以忽略不计。要想开启 <strong>PVP 联赛（PVP League）</strong>资格，你就先得把 PVP 等级混到 20 级，按照胜率五五开来说，赢三十局输三十局差不多就二十多级了。在 PVP 联赛中，你参加排位比赛不仅可以获得 PVP 经验，还可以获得 <strong>联赛大箱子（PVP League Rewards 1,2,3,4,5,6.）</strong>。箱子有六级，你要一级一级往上拿箱子，俗称爬级，高级别的箱子含有若干数量的 <strong>联赛券（PVP League Tickets）</strong>、大量金币（依次是5、5、10、10、15、20g）及 <strong>换粉色装备用的牌子（Box of Grandmaster Marks, Ascended Shards of Glory）</strong>等。顺便说一下，满级的箱子内肝帝可以无限刷，除了联赛券不会继续给你外，其他奖励丝毫不差哦，<del>肝帝们既不想买金又想快速做粉装的话，PVP 联赛值得你拥有</del>。</p><details><summary>萌新请展开：PVP 几级可以去？需要资料片么？</summary>
+虽然说你角色等级很低的时候就可以去，不过我还是推荐你先跑跑图，熟悉一下自己的技能，然后玩 PVP 的时候，Build 不要用默认的，要去上文提到的 Metabattle 网站搞套好用的 Build，等有了自己的理解就可以自己开创适合自己的 Build 和打法了。<br>
+资料片的话，没有资料片是用不了新特性 Build，只能用一些老特性 Build，新特性 Build 有些比较好用就是了。
+</details><h2><a name='header-n145' class='md-header-anchor '></a>世界之战 WvW World vs World</h2><p>啥，你想打WvW 战场？那时候你应该不是萌新了，<del>其实这部分我只是懒得写了</del>。表面上是世界之战，实际上就是服务器之战，进去混人头就行，穿的越肉越好，跟着跑来跑去攻城掠地<del>蹭人头捡包</del>就是了。要是你穿一身输出装的话，你就是名副其实的玻璃大炮，跟团的时候自己跟着跟着就被秒了，记住，在战场，活着才有输出，<del>活着方便捡包跑路</del>。</p><p>打战场的话，<strong>请选择强力战场职业</strong>，<strong>请选择强力战场职业</strong>，<strong>请选择强力战场职业</strong>，重要的事情说三遍，不然你可能跑路十分钟，送包三秒钟。玩战场基本有两种，一种是跟团，一种是单走或几个人去搞事情，<del>走着走着就跑去跟团了</del>。<strong>跟团请联系团长或选择强势跟团职业</strong>，如 Chronomancer Support 增益幻、Scourges 直伤/混伤/症状灾厄车头/外围死灵、Spellbreaker 直伤破法外围战士、Revenant 刺客矮人魂武、Firebrand 支援铁车头守护和 Weaver 编织元素等；<strong>单走请选择强势单走职业</strong>，如 Chief 盗贼、Mirage 症状幻、Weaver 编织元素和 Spellbreaker 直伤破法战士等。具体的 Build 可以参考 <a href='https://metabattle.com/wiki/WvW'>Metabattle- WvW</a>，建议使用 Meta/Great Build 以获得较好的体验，<del>而不是天天跑路送包</del>。</p><p>关于战场能力等级，推荐先点一级 War Gliding Mastery（滑翔），然后点四级 Provisions Master（自动捡包），其它的看需求。</p><h3><a name='header-n228' class='md-header-anchor '></a>Kaineng 服务器的二三事</h3><p>我在的服务器是 Kaineng，比较活跃北京/东南亚时间指挥有 Riddle Mituan.5061 (WE 公会，国人，四年指挥经验，英语交流，在 B 站常发一些<a href='https://space.bilibili.com/838506'>打团视频</a>，风格：稳健打团，<a href='https://en-forum.guildwars2.com/discussion/55053/wvw-world-elite-we-on-kaineng-looking-for-south-east-asia-time-fight-focus-players'>招募贴</a>）、Stoics.5741（BB 公会，韩人，风格：跑路飙车）、Moez.9067（eN 公会，<a href='https://en-forum.guildwars2.com/discussion/52685/wvw-ocx-kaineng-en-entropy-is-recruiting'>招募贴</a>）、Flaviolinoo.2968（散人，地图上没指挥的话，他会带散人，比较随缘），Yen.5921（有人当指挥他就不开指挥了），上面这些都是我跟过的，喜欢打 WvW 的可以通过 ID 加他们好友，看他们什么时候在战场就跟上吧。</p><p>Kaineng 服务器有一个 Discord WvW 交流大厅，加入之后需要 API 验证你的角色是否在 Kaineng 服务器之后，你才可以进行交流，这是 <a href='https://discord.gg/jRVnHzV'>Discord 邀请链接</a>，里面还有很多美东/美西时间的公会组织和指挥。Discord 在国内不能直接访问，所以请自备爱国软件。</p><p>其他服务器我没有待过，所以不清楚诶，<del>其实是懒得查资料补充了</del>。</p><h3><a name='header-n219' class='md-header-anchor '></a>关于 WvW 服务器的事情</h3><p>你一开始角色选服务器的时候，就是在选择 WvW 战场服务器，建议萌新选择负载为 Very High 的服务器，第一次转服免费，萌新不要随便用，<strong>请慎重考虑之后再转服</strong>。转到负载低的服务器花费不高，但是转到负载高的服务器就很高了。激战 2 用的是大服务器系统，你和你的小伙伴如果在不同服务器的话，只是在 WvW 里面不能一个队伍，跑图、碎层、Raid 和 PVP 都可以一起打，但如果你是美服，你的小伙伴在欧服，那你们两个就不能一起玩咯。</p><p>选服务器的时候，如果你手滑选了欧服也没有问题，就是欧服的时间段基本上只有欧洲时间，相当于北京时间凌晨或后半夜，不像美服是全时段的，居住在国内但选了欧服的小伙伴要做好天天熬夜的准备哦。欧服和美服可以互相转</p><h3><a name='header-n223' class='md-header-anchor '></a>各个战场服务器情况</h3><p>说一下现在（2018 年 10 月）各个 WvW 大服务器的情况吧，美服 Kaineng、FA 和 BG 这几个服务器比较热闹，Kaineng 北京/东南亚时间人数不错，酷爱打架，有一批技术很好的队友，胜负参半，经常搞事；FA 的话，以前有个华人战场公会，只不过最近 MD 罗德回国服了，所以美服现在不存在华人战场公会了。FA 和 BG 在北京/东南亚时间人都挺少的，FA 出团特别晚，灭两次就散场；BG 我不太清楚；SOS 是刷子服，打起来就不行了，需要人数压制才能打赢，<del>天天送包</del>；Mag 不太清楚，听说全民游走，民风彪悍。以上只是针对北京/东南亚/亚洲时间，如果你是美国时间的请你搜索相关资料进行选服。</p><p>需要注意的是，目前<strong>美服的 FA、BG 和 SOS 负载已满</strong>，新玩家不能加入对应的服务器，老玩家也无法通过转服转进去。</p><h1><a name='header-n147' class='md-header-anchor '></a>职业介绍</h1><h1><a name='header-n148' class='md-header-anchor '></a>装备体系介绍</h1><h2><a name='header-n149' class='md-header-anchor '></a>装备属性中英文对照表</h2><p>P Power 威力
+P Precision 精准
+C Critical Damage→现已改F Ferocity 暴击效果
+C Condition Damage 症状伤害
+V Vitality 体力
+T Toughness 坚韧
+AR=Agony Resistance=痛苦抵抗
+H 治疗效果</p><h2><a name='header-n151' class='md-header-anchor '></a>武器种类中英文对照表</h2><p>S=Sword=单手剑
+S=Scepter= 权杖 节杖
+S=Shield=盾牌
+D=Dagger=匕首
+M=Mace=单手锤
+T=Torch=火炬
+P=Pistol=手枪
+A=Axe=单手斧
+F=Focus=聚能器
+GS=Greatsword=大剑
+H=Hammer=大锤
+LB=Long bow=长弓(长弓大锤战老外都叫Hambow)
+SB=Short bow=短弓 (也有可能是女王谷的世界BOSS)
+R=Rifle=来福</p><h2><a name='header-n153' class='md-header-anchor '></a>传奇装备获取</h2><p>@Ramsay 不入资料片啊，就别考虑什么粉啊之类的了
+@Ramsay 粉装收集，去LS3挖地图材料，搞右边六件全粉，然后 武器和护甲  平时打碎层 打BOSS碰运气 如果你打PVP或者PVE 也可以换</p><p>传奇武器：[狂乱、&quot;鲨神&quot;小滝、吟游诗圣、逐火预言、狼嚎、炎龙、霜牙、热舞、嘲弄、猎杀、雷矢、葛藤、梦中情人、天仪、神像、虹光、煅焚、辰光、暗幕、永恒]。</p><p>传奇武器：用时1天[星域、猛虎、优品、永诀、灵感、淑莎朵、战争烈焰、皇家海军舰队]400元 （赠送：幻化力20个 、粉装背部1个、+16任意灌注5个、天界灌注红1个）。</p><p><a href='https://www.youtube.com/watch?v=9lfOvx8NUW0'>10-Raid 重甲男 Guild Wars 2 Legendary Armor Preview</a><a href='https://www.youtube.com/watch?v=W4sE-y7RenQ'>全种族性别职业展示</a></p><h2><a name='header-n158' class='md-header-anchor '></a>PVP 传奇护甲</h2><p>pvp做传奇护甲难不难啊，胜率五五开，需要3个赛季
+你要知道PVP护甲的构成方式   需要两种货币 一种是rank宝箱里给的PVP碎片 这个可以无限拿 只要你有肝  一套PVP护甲我记得是1500个上下 具体多少忘了 
+另一种货币 需要赛季卷 这个卷 每个赛季固定给100个 不会多给 做一件传奇需要50个卷  所以你需要3个赛季
+赛季券是按赛季打满</p><h1><a name='header-n160' class='md-header-anchor '></a>专精</h1><h2><a name='header-n167' class='md-header-anchor '></a>专精点</h2><p>专精点： 探索迈古玛、完成某些带专精（带绿色水滴标志的）的成就，都可以获得专精点。研发越高级的专精，需要专精点越多。
+获取绿专精：迈古玛跑图&gt;迈古玛世界BOSS&gt;迈古玛小游戏&gt;迈古玛史诗纪实
+获取红专精：泰瑞亚专精成就
+获取紫专精：伊伦娜跑图&gt;烈焰征途史诗纪实&gt;传奇赏金&gt;特殊成就</p><h2><a name='header-n169' class='md-header-anchor '></a>专精中英文对照</h2><p>分类/分支|中文名|所需专精点数||解锁条件
+Central Tyria|泰瑞亚中心(红)|49 Central Tyria mastery point||HoT PoF
+--Pact Commander|契约团指挥官|19 Central Tyria mastery point||Unlocking a mastery track from another category
+--Legendary Crafting|迷雾碎层协调|19 Central Tyria mastery point||Unlocking a mastery track from another category
+--Fractal Attunement|传奇制作|11 Central Tyria mastery point||Unlocking a mastery track from another category
+Heart of Thorns|迈古玛腹地(绿)|144 Heart of Thorns mastery point||HoT 
+--Gliding|滑翔|31 Heart of Thorns mastery point||Completing Torn from the Sky
+--Itzel Lore|伊策尔蛙知识|31 Heart of Thorns mastery point||Completing Torn from the Sky
+--Exalted Lore|尊者知识|19 Heart of Thorns mastery point||Entering Auric Basin
+--Nuhoch Lore|奴霍奇蛙知识|31 Heart of Thorns mastery point||Entering Tangled Depths
+--Raids|大型地下城|8 Heart of Thorns mastery point||Killing a boss in the Forsaken Thicket or Bastion of the Penitent raids
+--Ancient Magics|远古魔法|24 Heart of Thorns mastery point||Entering Bloodstone Fen or Ember Bay Living World Season 3
+Path of Fire||85 Path of Fire mastery point||PoF
+--Raptor Mount|肉食鸟|10 Path of Fire mastery point||Unlocking the raptor by saving Seeker&#39;s Village during Sparking the Flame
+--Sprimnger Mount|跳跳兔|14 Path of Fire mastery point||Purchasing the springer from the Highjump Ranch task vendor in the Desert Highlands
+--Skimmer Mount|飞鱼|14 Path of Fire mastery point||Purchasing the skimmer from the Skimmer Ranch task vendor in the Elon Riverlands
+--Jackal Mount|胡狼|14 Path of Fire mastery point||Purchasing the jackal from the Sand Jackal Run task vendor in the Desolation
+--Griffon Mount|狮鹫|12 Path of Fire mastery point||Unlocking the griffon by completing the Path of Fire story and the Open Skies collections
+--Roller Beetle Mount|甲壳虫|12 Path of Fire mastery point||Unlocking the roller beetle by completing the Beetle Juice||Beetle Saddle and Beetle Feed collections Living World Season 4
+--Crystal Champion|水晶冠军|9 Path of Fire mastery point||Entering Domain of Istan Living World Season 4</p><h2><a name='header-n171' class='md-header-anchor '></a>专精经验获取</h2><p>满级以后，之前升级的经验会转化为专精研发经验。研发经验必须满了以后，才可以消耗专精点来研发专精。 <br/>获取绿专精经验：刷蜥蜴&gt;迈古玛世界BOSS&gt;迈古玛小游戏
+获取红专精经验：   僵尸龙&gt;迷雾碎层
+获取紫专精经验：伊伦娜赏金团</p><h2><a name='header-n173' class='md-header-anchor '></a>专精升级顺序</h2><p>如果你某条专精经验满了，但是没有专精点研发。可以选择研发别的专精线路，在你获得足够的专精点以后再回来点经验已满的专精。 <br/>绿专精推荐研发顺序：<br/>滑翔2  –  伊策尔蛙知识1  –  尊者2  –  奴霍齐蛙2  –  远古魔法2    –  滑翔6（方便挖挖挖）  –  伊策尔蛙知识4   –  奴霍齐蛙4    –   远古魔法5    –    伊策尔蛙知识6   –  尊者6   –  奴霍齐蛙6    – 大型地下城4
+（想快速打十人本，在滑翔6以后，优先点大型地下城）
+红专精推荐研发顺序：
+契约团指挥官5 – 迷雾碎层协调4 – 传奇制作4 <br/>（想快速打迷雾碎层，优先点碎层，传奇制作同理）
+紫专精推荐研发顺序：
+肉食鸟3 – 跳跳兔3 – 飞鱼1 – 胡狼3 – 狮鹫3 –  飞鱼3 – 肉食鸟4 – 跳跳兔4 – 飞鱼4</p><h1><a name='header-n175' class='md-header-anchor '></a>游戏机制说明</h1><h2><a name='header-n176' class='md-header-anchor '></a>蔑视</h2><p>@jefully 萌新们在 80 级满级前，除了游侠、死灵、幻术，其他职业都别指望去单挑有蔑视条的金边怪、Boss。</p><p>货币介绍
+karma是业力 gold金</p><h1><a name='header-n180' class='md-header-anchor '></a>美服常用交流术语</h1><p>先杀小怪：kill mobs 或 kill adds first <del>暴躁一点就 kill adds first your mother fucker</del></p><h1><a name='header-n182' class='md-header-anchor '></a>经济体系</h1><p>这游戏 我现在总结就是 分两种材料 一种是特殊的绑定的材料或者地图货币 这种无法用金币购买的 就只能是刷 比如HOT的牌子等等 
+另一种就是 可以用金币购买的比如木头啊 矿啊之类的  这些材料 都是一个刷法就是爆肝刷钱然后直接收
+就做个简单比喻  T5的木头 做二代一些传奇需要量很大  一些人就开始天天泡在几个产木多的地方来挖木  正常一小时能挖木材150左右 我当初挖过  欧尔等各种图 一小时循环来挖  效率大概就这样 绝对不会超过一组
+那么问题来了 一小时 一组木头是三金左右 而我刷一小时的SW 能拿到15金左右 一小时的SW能直接收一组木板 而挖只能挖不到一组的木材  利润差3呗
+SW一小时收益  直接换金币 收木板 一小时一组木板起步  我觉得很划算  自从我算明白这个账之后 我号就停在SW了</p><h2><a name='header-n184' class='md-header-anchor '></a>一些常用的刷法</h2><h3><a name='header-n185' class='md-header-anchor '></a>人类初始剧情 每周15-20分钟 一把黑狮钥匙</h3><p><a href='https://www.youtube.com/watch?v=c4WjSnuoyDE'>Guild Wars 2 - Black Lion Key Farm - Fairly Optimised and Maybe the Fastest :-P</a></p><h3><a name='header-n187' class='md-header-anchor '></a>SW 一小时15金左右 爆肝套路 略枯燥</h3><p>SW是地图 The Silver Waste 80 (世界动态第二季) 的简称，就是去这张图做事件刷包包，然后包包给小号开，开低级装备全分解，分解使用黄色前面的那个工具，不嫌麻烦就是用白色分解工具，把材料丢黑狮卖，小号的等级要是46、47、48或49级，50的会出很多t5的皮啊 矿啊之类的0，主要值钱的还是t3  4 的材料如铁矿 亚麻布  还有皮革 硬质木和风干木，如果出了必出黄装的包包则不给小号开，SW有一种包 是打完突破给的 每次给3个 必出黄装 这种给大号开，或者其他地图拿到的包包也可以给小号开，POF出的那种不行，1小时15金左右，不过很枯燥</p><p>![The Silver Waste 80][The Silver Waste 80]</p><p>![The Silver Waste 80 Dungeons Task][The Silver Waste 80 Dungeons Task]</p><p>下面介绍一下这张图的构成：最右边的带传送点的基地，然后基地南北都有一个门   外面的地图 有四个堡垒，分别是 红色 蓝色 黄色 紫色，玩家要守住这四个堡垒  怪物会攻击城堡 攻击城堡的时候 会触发守城事件 玩家要来守城 守城结束会给你包包和整个地图的进度，城堡之间 会一直出现牛车给城堡运送资源   牛车运送资源的路上会有三次事件 会有小怪打牛车 牛车送到城堡 会增加城堡的等级进度  最高到五级 一般都是三级就OK  基本达不到五级  城堡的等级越高 守城一次给的地图进度就越多 所以一般就是全三级的时候 基本也就进度满了 很难达到5级  城堡的等级越高 小怪攻击力度就越大  3级以后有概率出传奇攻城怪   打掉给一个红色专精 四个都打掉再给一个红色专精 这就是大家速成的SW守传奇怪  就是为了这个专精点 （题外话） 随着城堡等级提升  守城时间也延长 从原来的3分钟延长到5分钟 当整个地图的进度满了之后 所有四个城堡守城任务立刻停止  地图一切任务停止 每个城堡里面 出一个大洞 跳进去打掉里面的BOSS 限时5分钟 四个BOSS都得打掉 否则失败 打掉四个BOSS之后 休息三分钟 打最后的BOSS 是在地图的最左边 这个位置 分上中下三路 玩家要分开  你只能选择一条路  进去打了BOSS就不能打别的路的 一共三条路 三个BOSS 限时15分钟 这个过程 国服叫突破  白银突破 就是说打这个BOSS  打完之后 会有17分钟左右的休息时间 这17分钟 地图上会出现大量的什么lost XXXX chest 一般有挖箱子火车 跟着团队到处挖箱子   赚钱的东西 就是挖的这个箱子 以及守城给的箱子 出不了啥好的 本来也不出啥好东西 就是赚钱 恩 材料是给的这些包包 包包给小号 用小号分解 可以分解出低级的装备 小号要45到50的 我用的46的 分解出来的材料 丢黑狮就OK  正常速度 一小时110个包左右 然后挖的这种箱子 在你平时转圈守城的时候 一样可以看到地上有  看到了就挖 别哭泣 至于挖箱子的钥匙叫做Bandit Skeleton Keys 买钥匙的货币是Bandit Crests 
+<img src='https://i.jpg.dog/img/5af80e9cbef8ee7df49f7dd47b5b65b3.jpg' alt='D517A22DEA6A3E5D0181D44CB69D1DE9' referrerPolicy='no-referrer' /></p><p>这种货币 别乱花 都用来买钥匙就OK  总体这个货币我感觉 1000个钥匙挖光之后 给的货币可以买2000+把钥匙   这个货币 就是你守城给的奖励 然后 打这个图 不是死守一个城  每个城市不是有这个守城事件嘛 出事件 就打死一个怪 然后去下一个城等  等事件出来了 在打死一个怪 然后再去下一个 只要蹭到事件就行 中间看到牛车保护事件就打一下小怪 不打也无所谓 总而言之就是在总体路线不变的情况下 尽可能多的蹭各种事件 守城 给的是绿色的装备箱   挖箱子 给的是红色的包包 这种红色包包可以开出80橙色装备 基本上一组出一个   同时还会直接给很多金币  以及各种80的材料 但是 如果你用小号 是不会出80的黄色装备的</p><p>每次进度满了 打完城市里地下的BOSS 以及最后突破的BOSS 会各给一个这个钥匙 Key of Greater Nightmares（黄色） 这个钥匙可以到地图南边的洞穴里开箱子 Sharp Valley右边的床送点 会给黄装+三个包包 最重要的来了 这个箱子 会有概率出橙色的传奇前置 然后 最后的突破BOSS 也有概率出灌注 但是我没见过  据说是这里出 </p><p>传奇前置在属性介绍界面的下面都会有一小排淡蓝色小字This weapon is used to craft the legendary axe Frostfang（rgb：151<span>	</span>198<span>	</span>199<span>	</span></p><p>幽灵灌注是raid出的 打raid  或者直接TP买120金 raid要不老二出，要不1000个牌子</p><p>开碎层箱子：钥匙就用日常给的，不要自己买钥匙，买钥匙的血亏，无数人的痛苦经验</p><h3><a name='header-n197' class='md-header-anchor '></a>istan 刷材料 切地图刷event</h3><p>听说是打champion然后给那个橙色的包包 再怼满寻宝率 刷SW的寻宝BUFF 寻宝率能怼到700+  然后开包 会出很多好东西</p><h3><a name='header-n199' class='md-header-anchor '></a>HoT 三图日常 咸鱼刷法</h3><p>SW其实刷起来会有点累 如果你想咸鱼挂机  要求也不高 可以去刷HOT三图日常  国内时间偶数整点进场 从VB-TD-AB每天一次 全程一小时15分  保底10金左右  有概率出虫卵和赤金灌注 虫卵美服价格约15000金 赤金约5000金</p><h2><a name='header-n201' class='md-header-anchor '></a>战场开箱子，那个洞里有个小狗，极度致命，几乎无敌</h2><p>那个洞，从传送点位置上屎壳螂，因为是下坡坡度大 不需要技能直接就可以加速进去  然后惯性注意拐弯  然后就是一条笔的道路  配合加速  直接飞过去 狗都追不上  可以体验超车的感觉，只要上了中间平台 狗就不会再干你了，没用的 狗追不上你  ，嗯 break期间不是挖箱子么 ，第一圈你跟着跑 ，第二圈的时候过去挖一下  剩个四五分钟去开就好了</p><h1><a name='header-n208' class='md-header-anchor '></a>目前活跃公会介绍</h1><p>todo</p><p>关于 EVA 公会插一句，EVA 公会 HoT Meta Train 每周一到周五每晚八点开始 TD&gt;AB&gt;DS&gt;AB&gt;VB 一条龙，他们周六做 PoF Bounty/lstan，周日做 HoT /PoF，周六日也都是从北京时间晚上八点开始，喜欢一条龙的，有兴趣的可以在他们的 Meta 活跃时间在组队频道 LFG 找到并跟团，也可以加入公会。</p><h1><a name='header-n210' class='md-header-anchor '></a>mac 电脑防止command+q误碰</h1><p>brew tap dteoh/sqa
+brew cask install slowquitapps
+defaults write com.dteoh.SlowQuitApps delay -int 3500
+defaults write com.dteoh.SlowQuitApps whitelist -array-add net.arena.Guild-Wars-2
+defaults write com.dteoh.SlowQuitApps invertList -bool YES</p></div>
+</body>
+</html>
